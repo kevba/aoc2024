@@ -109,3 +109,7 @@ func FindIndex[T comparable](s []T, e T) int {
 	}
 	return -1
 }
+
+func RemoveIndex(slice []int, i int) []int {
+	return append(slice[:i], slice[i+1:]...)
+}
